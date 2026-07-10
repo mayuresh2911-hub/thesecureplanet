@@ -1356,16 +1356,212 @@ button {
   padding: 6px;
 }
 
+/* ==========================================================================
+   RESPONSIVE DESIGN: TABLETS & SMALL DESKTOPS (<= 1024px)
+   ========================================================================== */
 @media (max-width: 1024px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .layout-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .hero-main-card {
+    min-height: 380px;
+    padding: 28px;
+  }
+  .layout-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
 }
 
+/* ==========================================================================
+   RESPONSIVE DESIGN: MOBILE PHONES (<= 768px)
+   ========================================================================== */
 @media (max-width: 768px) {
-  .nav-links { display: none; }
-  .mobile-nav-toggle { display: block; }
-  .article-card { grid-template-columns: 1fr; }
-  .article-thumb { height: 200px; }
-  .footer-grid { grid-template-columns: 1fr; }
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Top Bar Mobile Optimization */
+  .top-bar-inner {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    text-align: center;
+  }
+  .top-social-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  /* Header & Logo Mobile Stack */
+  .header-branding {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .logo-component {
+    justify-content: center;
+    text-align: center;
+  }
+  .logo-title {
+    font-size: 1.28rem;
+    letter-spacing: 0.05em;
+  }
+  .logo-wing-line {
+    width: 12px;
+  }
+  .header-search-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 16px;
+  }
+  .search-shortcut {
+    display: none;
+  }
+
+  /* Navigation Bar & Mobile Drawer */
+  .navbar-inner {
+    height: 56px;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-strong);
+    padding: 16px;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: var(--shadow-lg);
+    z-index: 1001;
+  }
+  .nav-links.mobile-open {
+    display: flex;
+  }
+  .nav-link {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    border-left: 2px solid var(--brand-coral);
+    background: rgba(255, 255, 255, 0.02);
+    margin-left: 12px;
+    margin-top: 4px;
+    display: none;
+  }
+  .nav-item:hover .dropdown-menu,
+  .nav-item:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-subtle);
+  }
+
+  /* Hero Section Mobile */
+  .hero-main-card {
+    min-height: 320px;
+    padding: 22px;
+  }
+  .hero-title {
+    font-size: 1.55rem;
+  }
+
+  /* Filter Tabs Horizontal Scrolling */
+  .filter-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .filter-pill {
+    flex-shrink: 0;
+  }
+
+  /* Article Cards Mobile Stack */
+  .article-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
+  .article-thumb {
+    height: 200px;
+  }
+
+  /* Post Page Mobile */
+  .post-main-title {
+    font-size: 1.85rem;
+  }
+  .post-author-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .share-buttons {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* Footer Mobile */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN: NARROW PHONES (<= 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  .logo-title {
+    font-size: 1.1rem;
+  }
+  .logo-wing-line {
+    display: none;
+  }
+  .hero-title {
+    font-size: 1.35rem;
+  }
+  .meta-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .side-feature-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .side-thumb {
+    width: 100%;
+    height: 160px;
+  }
 }

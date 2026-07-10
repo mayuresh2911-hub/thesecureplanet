@@ -193,16 +193,24 @@ function initMobileMenu() {
 
   if (!toggle || !navLinks) return;
 
-  toggle.addEventListener('click', () => {
-    const isVisible = navLinks.style.display === 'flex';
-    navLinks.style.display = isVisible ? 'none' : 'flex';
-    navLinks.style.flexDirection = 'column';
-    navLinks.style.position = 'absolute';
-    navLinks.style.top = '100%';
-    navLinks.style.left = '0';
-    navLinks.style.width = '100%';
-    navLinks.style.background = 'var(--bg-surface)';
-    navLinks.style.padding = '16px';
-    navLinks.style.boxShadow = 'var(--shadow-lg)';
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    navLinks.classList.toggle('mobile-open');
+    const icon = toggle.querySelector('i');
+    if (icon) {
+      if (navLinks.classList.contains('mobile-open')) {
+        icon.className = 'fa fa-times';
+      } else {
+        icon.className = 'fa fa-bars';
+      }
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('mobile-open') && !navLinks.contains(e.target) && !toggle.contains(e.target)) {
+      navLinks.classList.remove('mobile-open');
+      const icon = toggle.querySelector('i');
+      if (icon) icon.className = 'fa fa-bars';
+    }
   });
 }
