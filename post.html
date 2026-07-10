@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A FREE Retro Video Game Emulator — The Secure Planet</title>
+  <meta name="description" content="A FREE Retro Video Game Emulator OpenEmu for macOS modular emulation architecture." />
+  <link rel="icon" href="https://www.thesecureplanet.com/favicon.ico" />
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-social-list">
+        <a href="https://www.twitter.com/TheSecurePlanet" target="_blank" title="Twitter">
+          <i class="fa fa-twitter"></i> @TheSecurePlanet
+        </a>
+        <a href="https://goo.gl/t3DX3D" target="_blank" title="YouTube Channel">
+          <i class="fa fa-youtube-play"></i> YouTube
+        </a>
+        <a href="https://www.linkedin.com/in/prakashp" target="_blank" title="LinkedIn">
+          <i class="fa fa-linkedin-square"></i> LinkedIn
+        </a>
+        <a href="https://feeds.feedburner.com/TheSecurePlanet" target="_blank" title="RSS Feeds">
+          <i class="fa fa-rss"></i> RSS
+        </a>
+      </div>
+      <div class="top-actions">
+        <div class="live-status">
+          <span class="live-dot"></span>
+          <span>LIVE INTEL FEED</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="container header-branding">
+      <div class="brand-logo">
+        <a href="index.html" class="logo-shield">
+          <i class="fa fa-shield"></i>
+        </a>
+        <div class="brand-text">
+          <h1><a href="index.html">The Secure <span>Planet</span></a></h1>
+          <p class="brand-tagline">Cyber Security • Audit Compliance • Digital Forensics • CISSP • CISA • CISM</p>
+        </div>
+      </div>
+      <button class="header-search-btn" id="search-trigger">
+        <i class="fa fa-search"></i>
+        <span>Search Articles & Guides...</span>
+        <span class="search-shortcut">⌘K</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- GLASSMORPHIC STICKY NAVBAR -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <i class="fa fa-home"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+        </li>
+        <li class="nav-item">
+          <a href="dmca.html" class="nav-link">DMCA</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            Categories <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-link"><i class="fa fa-shield"></i> Information Security</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-check-square-o"></i> Audit Compliance</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-lock"></i> Cyber Security</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-search-plus"></i> Digital Forensics</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-lightbulb-o"></i> Tech Tips</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-rocket"></i> Entrepreneurship</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-folder-open-o"></i> General</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-briefcase"></i> Jobs</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            Topics <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-link"><i class="fa fa-terminal"></i> Science</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-server"></i> Cloud & AWS Security</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-book"></i> ISO Standards</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-graduation-cap"></i> Corporate Training</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="post.html" class="nav-link">My Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <div class="nav-tools">
+        <a href="post.html" class="random-post-btn">
+          <i class="fa fa-random"></i> Random Article
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN POST ARTICLE LAYOUT -->
+  <main class="main-content-area">
+    <div class="container layout-grid">
+      
+      <!-- ARTICLE WRAPPER -->
+      <article class="post-content">
+        
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="index.html">Tech Tips</a>
+          <span>/</span>
+          <span style="color:var(--text-main);">A FREE Retro Video Game Emulator</span>
+        </nav>
+
+        <!-- Post Header -->
+        <header class="post-header-main">
+          <span class="cat-badge tech-tips"><i class="fa fa-lightbulb-o"></i> Tech Tips</span>
+          <h1 class="post-main-title">A FREE Retro Video Game Emulator — OpenEmu for macOS</h1>
+          
+          <div class="post-author-bar">
+            <div class="author-info">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg33fLV-eMF__aAJ8TfolBbXg8p5lUk8cVnZ2fcl-wGIMurRrvKpJqrbbSFqGCFOSKOYSy17Nit5uk8Znu1X0bbzQmR91PJJYDWyQteHGZEF3c_1g9PJ5aq7QKFjf4qJBo/s114/TSP.jpg" alt="Author Avatar" />
+              <div class="author-names">
+                <h4>The Secure Planet</h4>
+                <span>Published on September 20, 2023 • 4 min read</span>
+              </div>
+            </div>
+
+            <!-- Share buttons row -->
+            <div class="share-buttons">
+              <button class="share-btn" id="copy-link-btn" title="Copy Link">
+                <i class="fa fa-link"></i>
+              </button>
+              <a href="https://twitter.com/intent/tweet?text=A%20FREE%20Retro%20Video%20Game%20Emulator&url=https://www.thesecureplanet.com" target="_blank" class="share-btn" title="Share on Twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.thesecureplanet.com&title=A%20FREE%20Retro%20Video%20Game%20Emulator" target="_blank" class="share-btn" title="Share on LinkedIn">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="https://reddit.com/submit?url=https://www.thesecureplanet.com&title=A%20FREE%20Retro%20Video%20Game%20Emulator" target="_blank" class="share-btn" title="Share on Reddit">
+                <i class="fa fa-reddit-alien"></i>
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <!-- Article Body Content -->
+        <div class="post-body">
+          <p>
+            It is an open-source project whose purpose is to bring macOS game emulation into the realm of first-class citizenship. The project leverages modern macOS technologies, such as Cocoa, Metal, Core Animation, and auto-updating via Sparkle.
+          </p>
+
+          <div class="post-featured-image">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvWwS2mNvKHmo2PHc1Tw5nOTHwQkQDmBKVFsgjzniRXVyqvV911niEBD67Qr1B_ttMeJwpaQz77orAPJg8nRWhuVauwJTPytWSDwo7agUqQcUwjq1DhcZRAO9rQTO0tJUSPB1DZqRsD1Ll_pCfzRwgBL88fffUf-3ttR7uOMKOYFIY893v-tb0US8z_afw/w640-h461/Emu.png" alt="OpenEmu Main Interface" />
+          </div>
+
+          <h2>Modular Architecture & Multi-Console Support</h2>
+          <p>
+            OpenEmu utilizes a modular architecture allowing independent game engine plugins to emulate multiple hardware platforms within a single unified, beautiful library interface. Instead of dealing with complicated manual ROM setups and scattered configuration files across different folders, OpenEmu automatically organizes your titles into virtual consoles.
+          </p>
+
+          <h3>Supported Retro Hardware Platforms</h3>
+          <ul>
+            <li><strong>Nintendo Systems:</strong> NES, Super Nintendo (SNES), Game Boy, Game Boy Advance, Nintendo 64, Nintendo DS</li>
+            <li><strong>Sega Consoles:</strong> Sega Genesis / Mega Drive, Sega Master System, Game Gear, Sega Saturn</li>
+            <li><strong>Sony & Arcade:</strong> PlayStation 1 (PSX), PSP, Neo Geo Pocket, Arcade Core systems</li>
+          </ul>
+
+          <div class="code-block">
+            # Verify system compatibility and brew dependency check on macOS<br/>
+            $ brew install --cask openemu<br/>
+            ==> Installing Cask openemu<br/>
+            ==> Success! OpenEmu was installed to /Applications/OpenEmu.app
+          </div>
+
+          <h2>Seamless Gamepad & Controller Integration</h2>
+          <p>
+            One of the strongest technical merits of OpenEmu is its plug-and-play HID controller mapping. Whether you are using a Sony DualSense, Xbox Wireless Controller, Nintendo Switch Pro Controller, or generic USB retro pads, OpenEmu detects the device automatically and provides an intuitive visual layout for button configuration.
+          </p>
+
+          <!-- Download Callout CTA Box -->
+          <div class="download-cta-box">
+            <h3>Download OpenEmu for macOS</h3>
+            <p>Experience clean, open-source emulation with zero bloatware or adware.</p>
+            <a href="https://openemu.org" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              <i class="fa fa-download"></i> Official Release Download
+            </a>
+          </div>
+
+          <h2>Security & Open Source Integrity</h2>
+          <p>
+            From a cybersecurity and software integrity perspective, downloading standalone emulators from unverified mirrors often exposes users to bundled adware or telemetry. Because OpenEmu is fully open-source and auditable on GitHub, security researchers and enthusiasts can inspect the core engines and verify builds independently.
+          </p>
+        </div>
+
+        <!-- Post Share Bar -->
+        <div class="post-share-bar">
+          <div style="font-weight:600;color:var(--text-secondary);">
+            Found this guide useful? Share it with your network:
+          </div>
+          <div class="share-buttons">
+            <a href="https://twitter.com/intent/tweet?text=A%20FREE%20Retro%20Video%20Game%20Emulator&url=https://www.thesecureplanet.com" target="_blank" class="share-btn" title="Share on Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.thesecureplanet.com&title=A%20FREE%20Retro%20Video%20Game%20Emulator" target="_blank" class="share-btn" title="Share on LinkedIn">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://reddit.com/submit?url=https://www.thesecureplanet.com&title=A%20FREE%20Retro%20Video%20Game%20Emulator" target="_blank" class="share-btn" title="Share on Reddit">
+              <i class="fa fa-reddit-alien"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Previous / Next Navigation -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px;">
+          <a href="post.html" class="side-feature-card" style="padding:16px;">
+            <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">
+              <i class="fa fa-arrow-left"></i> Previous Article
+            </div>
+            <div style="font-weight:600;margin-top:4px;">Sherloq Image Forensic Toolset</div>
+          </a>
+          <a href="post.html" class="side-feature-card" style="padding:16px;text-align:right;">
+            <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">
+              Next Article <i class="fa fa-arrow-right"></i>
+            </div>
+            <div style="font-weight:600;margin-top:4px;">Monitor IPv4 Utilization for AWS VPC</div>
+          </a>
+        </div>
+
+        <!-- Interactive Comments Section -->
+        <section class="comment-section">
+          <h3 style="font-family:var(--font-heading);font-size:1.35rem;margin-bottom:16px;">
+            Community Discussion
+          </h3>
+          
+          <div class="comment-tabs-header">
+            <button class="comment-tab-btn active" data-tab="blogger">Blogger Comments (0)</button>
+            <button class="comment-tab-btn" data-tab="disqus">Disqus</button>
+            <button class="comment-tab-btn" data-tab="facebook">Facebook</button>
+          </div>
+
+          <div class="comment-pane" data-pane="blogger" style="display:block;">
+            <div style="background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:24px;text-align:center;">
+              <p style="color:var(--text-secondary);margin-bottom:16px;">No comments yet. Be the first to start the security discussion!</p>
+              <button class="btn-primary" onclick="alert('Comment post modal opened.')">
+                <i class="fa fa-comment-o"></i> Post A Comment
+              </button>
+            </div>
+          </div>
+
+          <div class="comment-pane" data-pane="disqus" style="display:none;">
+            <div style="background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:24px;color:var(--text-secondary);">
+              <i class="fa fa-comments"></i> Disqus thread initialized for <em>www.thesecureplanet.com</em>.
+            </div>
+          </div>
+
+          <div class="comment-pane" data-pane="facebook" style="display:none;">
+            <div style="background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:24px;color:var(--text-secondary);">
+              <i class="fa fa-facebook-official"></i> Facebook social plugin container ready.
+            </div>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="sidebar">
+
+        <!-- Social Connect Grid -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">
+            <span><i class="fa fa-share-alt"></i> Connect With Us</span>
+          </h3>
+          <div class="social-grid">
+            <a href="https://www.twitter.com/TheSecurePlanet" target="_blank" class="social-tile">
+              <i class="fa fa-twitter"></i> Twitter
+            </a>
+            <a href="https://goo.gl/t3DX3D" target="_blank" class="social-tile">
+              <i class="fa fa-youtube-play"></i> YouTube
+            </a>
+            <a href="https://www.linkedin.com/in/prakashp" target="_blank" class="social-tile">
+              <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://feeds.feedburner.com/TheSecurePlanet" target="_blank" class="social-tile">
+              <i class="fa fa-rss"></i> RSS Feed
+            </a>
+          </div>
+        </div>
+
+        <!-- Popular Posts Feed -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">
+            <span><i class="fa fa-fire"></i> Popular Articles</span>
+          </h3>
+          <div class="popular-list">
+            
+            <a href="post.html" class="popular-item">
+              <span class="popular-item-number">01</span>
+              <div class="popular-thumb">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd_-SZNNTTXFsgSVmvz5clcFtY-8-gNtikAFKOpaSca97fxxOOqsnApMOHG6luzjCnDO2hyphenhyphen8hR95qj9COiMA0YmUZs2-_qkCrTRdVSWXG_rD1E4ceQKswzkyRDOzTJX-rG1ply5rtrsus4/s72-c/VulnScan.png" alt="Microsoft Memory Corruption" />
+              </div>
+              <span class="popular-title">Microsoft — Analyze Memory Corruption Bugs</span>
+            </a>
+
+            <a href="post.html" class="popular-item">
+              <span class="popular-item-number">02</span>
+              <div class="popular-thumb">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCh5rJQAflR9_zGGyGILw7k1z1rAZIA5024G6kxgRff8m8PrVmnzwPSVNDvZnmfG9JQxVNQhTUChSQv1olVz577P2wBv3y1FNHQe_uD0xOypjrKKoYy9UwchQQmJ2VW_IhQnvw0jzFSsm9/s72-c/Taipan.jpg" alt="Taipan Scanner" />
+              </div>
+              <span class="popular-title">Free Web Application Security Scanner</span>
+            </a>
+
+            <a href="post.html" class="popular-item">
+              <span class="popular-item-number">03</span>
+              <div class="popular-thumb">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2axbFGRbCoIOSMOTkJXiQRC_EupUSHMUU9tiB2B2hsAEOs4PTr9kWvA2oLqaboZAhBm_fYE8GahL_42qykROWiWiLqPURFMRS9wJ8JSL3xdjrWXYZk4AKtCIplhifBbIJlMoSqkJv5qRe/s72-c/FreeCourses.jpg" alt="100+ Free Courses" />
+              </div>
+              <span class="popular-title">Exclusive — 100+ FREE Online Security Courses</span>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Categories Cloud -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">
+            <span><i class="fa fa-tags"></i> Categories</span>
+          </h3>
+          <div class="categories-cloud">
+            <a href="index.html" class="category-tag">Information Security</a>
+            <a href="index.html" class="category-tag">Audit Compliance</a>
+            <a href="index.html" class="category-tag">Cyber Security</a>
+            <a href="index.html" class="category-tag">Digital Forensics</a>
+            <a href="index.html" class="category-tag">Tech Tips</a>
+            <a href="index.html" class="category-tag">Science</a>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="margin-bottom:12px;">
+            <span class="logo-shield" style="width:40px;height:40px;font-size:1.2rem;"><i class="fa fa-shield"></i></span>
+            <span class="brand-text" style="font-size:1.35rem;font-weight:700;">The Secure Planet</span>
+          </a>
+          <p>
+            The Secure Planet delivers premier consulting, corporate training, CISSP, CISA, and CISM research, digital forensics guides, and actionable cybersecurity intelligence.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home Feed</a>
+            <a href="about.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="dmca.html">DMCA Compliance</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Security Areas</h4>
+          <div class="footer-links">
+            <a href="index.html">Information Security</a>
+            <a href="index.html">Audit Compliance</a>
+            <a href="index.html">Digital Forensics</a>
+            <a href="index.html">Cyber Security</a>
+            <a href="index.html">Tech Tips & Guides</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Stay Secure</h4>
+          <p style="font-size:0.875rem;color:var(--text-secondary);">
+            Subscribe to receive critical alerts and research directly to your inbox.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+            <input type="email" placeholder="Your work email..." class="newsletter-input" required />
+            <button type="submit" class="btn-primary" style="padding:10px 18px;font-size:0.85rem;justify-content:center;">
+              Subscribe Now
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>Copyright © 2026 The Secure Planet. All Rights Reserved.</div>
+        <div style="display:flex;gap:18px;">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="dmca.html">DMCA</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SEARCH MODAL OVERLAY -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal-content">
+      <div class="search-input-wrapper">
+        <i class="fa fa-search"></i>
+        <input type="text" id="search-input" class="search-modal-input" placeholder="Search articles, guides, CVEs..." />
+        <button class="search-close-btn" id="search-close" aria-label="Close search">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+      <div id="search-results-list" style="margin-top:16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="color:var(--text-muted);font-size:0.875rem;padding:8px 0;">
+          Type anything to search live articles...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

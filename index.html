@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Secure Planet — Cyber Security, Audit Compliance & Forensics</title>
+  <meta name="description" content="The Secure Planet, Cyber Security, Audit Compliance, Digital Forensics, Corporate training, CISSP, CISA, CISM, Information Security consulting" />
+  <meta name="keywords" content="The Secure Planet,Information Security,Audit Compliance,Cyber Security,Digital Forensics,TechTips" />
+  <link rel="icon" href="https://www.thesecureplanet.com/favicon.ico" />
+  
+  <!-- FontAwesome 4.7 for exact icon compatibility -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Custom Modern Styling -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-social-list">
+        <a href="https://www.twitter.com/TheSecurePlanet" target="_blank" title="Twitter">
+          <i class="fa fa-twitter"></i> @TheSecurePlanet
+        </a>
+        <a href="https://goo.gl/t3DX3D" target="_blank" title="YouTube Channel">
+          <i class="fa fa-youtube-play"></i> YouTube
+        </a>
+        <a href="https://www.linkedin.com/in/prakashp" target="_blank" title="LinkedIn">
+          <i class="fa fa-linkedin-square"></i> LinkedIn
+        </a>
+        <a href="https://feeds.feedburner.com/TheSecurePlanet" target="_blank" title="RSS Feeds">
+          <i class="fa fa-rss"></i> RSS
+        </a>
+      </div>
+      <div class="top-actions">
+        <div class="live-status">
+          <span class="live-dot"></span>
+          <span>LIVE INTEL FEED</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="container header-branding">
+      <div class="brand-logo">
+        <a href="index.html" class="logo-shield">
+          <i class="fa fa-shield"></i>
+        </a>
+        <div class="brand-text">
+          <h1><a href="index.html">The Secure <span>Planet</span></a></h1>
+          <p class="brand-tagline">Cyber Security • Audit Compliance • Digital Forensics • CISSP • CISA • CISM</p>
+        </div>
+      </div>
+      <button class="header-search-btn" id="search-trigger">
+        <i class="fa fa-search"></i>
+        <span>Search Articles & Guides...</span>
+        <span class="search-shortcut">⌘K</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- GLASSMORPHIC STICKY NAVBAR -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <ul class="nav-links">
+        <li class="nav-item active">
+          <a href="index.html" class="nav-link active-home">
+            <i class="fa fa-home"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+        </li>
+        <li class="nav-item">
+          <a href="dmca.html" class="nav-link">DMCA</a>
+        </li>
+
+        <!-- Categories Dropdown (Matching original site architecture) -->
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            Categories <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-link"><i class="fa fa-shield"></i> Information Security</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-check-square-o"></i> Audit Compliance</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-lock"></i> Cyber Security</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-search-plus"></i> Digital Forensics</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-lightbulb-o"></i> Tech Tips</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-rocket"></i> Entrepreneurship</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-folder-open-o"></i> General</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-briefcase"></i> Jobs</a>
+          </div>
+        </li>
+
+        <!-- The Secure Planet Special Menu -->
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            Topics <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-link"><i class="fa fa-terminal"></i> Science</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-server"></i> Cloud & AWS Security</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-book"></i> ISO Standards</a>
+            <a href="index.html" class="dropdown-link"><i class="fa fa-graduation-cap"></i> Corporate Training</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="post.html" class="nav-link">My Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <div class="nav-tools">
+        <a href="post.html" class="random-post-btn">
+          <i class="fa fa-random"></i> Random Article
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- LIVE BREAKING NEWS TICKER -->
+  <div class="news-ticker-bar">
+    <div class="container ticker-wrapper">
+      <div class="ticker-badge">
+        <i class="fa fa-bolt"></i> TRENDING
+      </div>
+      <div class="ticker-content">
+        <div class="ticker-items">
+          <div class="ticker-item">
+            <span>•</span>
+            <a href="post.html">OpenEmu: A FREE Retro Video Game Emulator modular architecture released for macOS</a>
+          </div>
+          <div class="ticker-item">
+            <span>•</span>
+            <a href="post.html">Sherloq: Best Open Source Image Forensic toolset with Qt-based GUI</a>
+          </div>
+          <div class="ticker-item">
+            <span>•</span>
+            <a href="post.html">Monitor IPv4 utilization for Amazon VPC Subnets with CloudWatch custom metrics</a>
+          </div>
+          <div class="ticker-item">
+            <span>•</span>
+            <a href="post.html">India Government releases guideline for Cyber Security in the Power Sector</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SPOTLIGHT SECTION -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      
+      <!-- Main Featured Card -->
+      <article class="hero-main-card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvWwS2mNvKHmo2PHc1Tw5nOTHwQkQDmBKVFsgjzniRXVyqvV911niEBD67Qr1B_ttMeJwpaQz77orAPJg8nRWhuVauwJTPytWSDwo7agUqQcUwjq1DhcZRAO9rQTO0tJUSPB1DZqRsD1Ll_pCfzRwgBL88fffUf-3ttR7uOMKOYFIY893v-tb0US8z_afw/w640-h461/Emu.png" alt="OpenEmu Retro Video Game Emulator" class="hero-main-bg" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="cat-badge tech-tips"><i class="fa fa-lightbulb-o"></i> Tech Tips</span>
+          <h2 class="hero-title">
+            <a href="post.html">A FREE Retro Video Game Emulator — OpenEmu for macOS</a>
+          </h2>
+          <p class="hero-summary">
+            OpenEmu brings macOS game emulation into the realm of first-class citizenship, leveraging modern Metal and Cocoa technologies with multi-engine modular support.
+          </p>
+          <div class="meta-row">
+            <div class="author-chip">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg33fLV-eMF__aAJ8TfolBbXg8p5lUk8cVnZ2fcl-wGIMurRrvKpJqrbbSFqGCFOSKOYSy17Nit5uk8Znu1X0bbzQmR91PJJYDWyQteHGZEF3c_1g9PJ5aq7QKFjf4qJBo/s114/TSP.jpg" alt="Author Avatar" />
+              <span>The Secure Planet</span>
+            </div>
+            <span>•</span>
+            <span>September 20, 2023</span>
+            <span>•</span>
+            <span><i class="fa fa-clock-o"></i> 4 min read</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Side Featured Grid -->
+      <div class="hero-side-grid">
+        <article class="side-feature-card">
+          <a href="post.html" class="side-thumb">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEevf8c51ZKIDwKTZtNFtoMJqLwudvCMD-wGtk6ifqgYoNNPpAFJcbnMf52rzspNJluYWjf1Tr6fY3WIdsQVcykGWAT5CqY667rOyQoPehn0Dmd-_hNotYqLDaNYvTOHXPlUjw73ohWp9pH6te9wpy2hbBswThf95S1bl_2sgsGTy9Sp7LiOoYIct_P8Sy/w640-h377/Image%20Forensic.png" alt="Sherloq Image Forensics" />
+          </a>
+          <div class="side-info">
+            <span class="cat-badge forensics" style="margin-bottom:6px;"><i class="fa fa-search"></i> Digital Forensics</span>
+            <h3 class="side-title">
+              <a href="post.html">Open Source — Best Image Forensic Toolset (Sherloq)</a>
+            </h3>
+            <div class="meta-row" style="font-size:0.75rem;">
+              <span>Sept 20, 2023</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="side-feature-card">
+          <a href="post.html" class="side-thumb">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDD3Zvhk5KXNnV4uqRCmAPQ9qN_YCd0A8VvfRTv6dCREMfoiOq2FS_wR2TsFPf4wTTA18bs1ESNkzjEXarSS48lmT24OHBzuJdqz7CK7mpbtUCutsUFKTy7Wp0nrBigvfr9Dm4y_beQtUedPFEa9YVBsurT74ECKyDH2K48qTa3aHbN6-BciFPaOFMoKn2/w640-h152/Watcher.png" alt="Watcher Program" />
+          </a>
+          <div class="side-info">
+            <span class="cat-badge tech-tips" style="margin-bottom:6px;"><i class="fa fa-shield"></i> Tech Tips</span>
+            <h3 class="side-title">
+              <a href="post.html">Free Program — Find if Your Computer is Being Used by Someone</a>
+            </h3>
+            <div class="meta-row" style="font-size:0.75rem;">
+              <span>Sept 20, 2023</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="side-feature-card">
+          <a href="post.html" class="side-thumb">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg40aFbGvdWEY86Rq1B5oZ7ilikDZONH5y-ciKb4akKPr619P6raWf0-mi9nKV7lDvhrLW94DJxtUT-8WqBF-VauGIYynOOsSS7MhzH2DbEzSpVDQR57WqrF1m8z3P16E6Lt_gytMGAVYQygbr1YJ_a1BhXCVuqiVYMS71s9GAzJufi1Z0Y780weJp3vRye/s16000/Risk%20Factor.png" alt="Risk Factor Climate Risk" />
+          </a>
+          <div class="side-info">
+            <span class="cat-badge science" style="margin-bottom:6px;"><i class="fa fa-globe"></i> Science</span>
+            <h3 class="side-title">
+              <a href="post.html">Amazing Website — Find Property Risk of Climate Change</a>
+            </h3>
+            <div class="meta-row" style="font-size:0.75rem;">
+              <span>Sept 20, 2023</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAIN AREA (ARTICLES + SIDEBAR) -->
+  <main class="main-content-area">
+    <div class="container layout-grid">
+      
+      <!-- LEFT MAIN CONTENT -->
+      <section class="main-feed">
+        <div class="section-header">
+          <h2 class="section-heading">
+            <i class="fa fa-tachometer"></i> LATEST INTEL & ARTICLES
+          </h2>
+          
+          <!-- Category Filter Pills -->
+          <div class="filter-tabs">
+            <button class="filter-pill active" data-filter="all">All</button>
+            <button class="filter-pill" data-filter="Tech Tips">Tech Tips</button>
+            <button class="filter-pill" data-filter="Digital Forensics">Digital Forensics</button>
+            <button class="filter-pill" data-filter="Information Security">Information Security</button>
+            <button class="filter-pill" data-filter="Science">Science</button>
+          </div>
+        </div>
+
+        <div class="articles-feed">
+
+          <!-- Card 1 -->
+          <article class="article-card" data-category="Tech Tips">
+            <a href="post.html" class="article-thumb">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvWwS2mNvKHmo2PHc1Tw5nOTHwQkQDmBKVFsgjzniRXVyqvV911niEBD67Qr1B_ttMeJwpaQz77orAPJg8nRWhuVauwJTPytWSDwo7agUqQcUwjq1DhcZRAO9rQTO0tJUSPB1DZqRsD1Ll_pCfzRwgBL88fffUf-3ttR7uOMKOYFIY893v-tb0US8z_afw/w640-h461/Emu.png" alt="OpenEmu" />
+            </a>
+            <div class="article-info">
+              <div>
+                <div class="article-header-meta">
+                  <span class="cat-badge tech-tips" style="margin-bottom:0;">Tech Tips</span>
+                  <span class="meta-row">Sept 20, 2023</span>
+                </div>
+                <h3 class="article-title">
+                  <a href="post.html">A FREE Retro Video Game Emulator — OpenEmu for macOS</a>
+                </h3>
+                <p class="article-excerpt">
+                  It is an open-source project whose purpose is to bring macOS game emulation into the realm of first-class citizenship. The project leverages modern macOS technologies, such as Cocoa, Metal, Core Animation, and auto-updating via Sparkle.
+                </p>
+              </div>
+              <div class="article-footer">
+                <div class="author-chip">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg33fLV-eMF__aAJ8TfolBbXg8p5lUk8cVnZ2fcl-wGIMurRrvKpJqrbbSFqGCFOSKOYSy17Nit5uk8Znu1X0bbzQmR91PJJYDWyQteHGZEF3c_1g9PJ5aq7QKFjf4qJBo/s114/TSP.jpg" alt="TSP" />
+                  <span>The Secure Planet</span>
+                </div>
+                <a href="post.html" class="read-more-link">
+                  Read Article <i class="fa fa-long-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="article-card" data-category="Science">
+            <a href="post.html" class="article-thumb">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg40aFbGvdWEY86Rq1B5oZ7ilikDZONH5y-ciKb4akKPr619P6raWf0-mi9nKV7lDvhrLW94DJxtUT-8WqBF-VauGIYynOOsSS7MhzH2DbEzSpVDQR57WqrF1m8z3P16E6Lt_gytMGAVYQygbr1YJ_a1BhXCVuqiVYMS71s9GAzJufi1Z0Y780weJp3vRye/s16000/Risk%20Factor.png" alt="Risk Factor" />
+            </a>
+            <div class="article-info">
+              <div>
+                <div class="article-header-meta">
+                  <span class="cat-badge science" style="margin-bottom:0;">Science</span>
+                  <span class="meta-row">Sept 20, 2023</span>
+                </div>
+                <h3 class="article-title">
+                  <a href="post.html">Amazing Website — Find if Your Property Will Have Risk of Climate Change</a>
+                </h3>
+                <p class="article-excerpt">
+                  Find leading physical climate risk modeling for any property in the U.S. Get a comprehensive risk overview and access detailed reports about past, present, and future flood/fire hazards.
+                </p>
+              </div>
+              <div class="article-footer">
+                <div class="author-chip">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg33fLV-eMF__aAJ8TfolBbXg8p5lUk8cVnZ2fcl-wGIMurRrvKpJqrbbSFqGCFOSKOYSy17Nit5uk8Znu1X0bbzQmR91PJJYDWyQteHGZEF3c_1g9PJ5aq7QKFjf4qJBo/s114/TSP.jpg" alt="TSP" />
+                  <span>The Secure Planet</span>
+                </div>
+                <a href="post.html" class="read-more-link">
+                  Read Article <i class="fa fa-long-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="article-card" data-category="Tech Tips">
+            <a href="post.html" class="article-thumb">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDD3Zvhk5KXNnV4uqRCmAPQ9qN_YCd0A8VvfRTv6dCREMfoiOq2FS_wR2TsFPf4wTTA18bs1ESNkzjEXarSS48lmT24OHBzuJdqz7CK7mpbtUCutsUFKTy7Wp0nrBigvfr9Dm4y_beQtUedPFEa9YVBsurT74ECKyDH2K48qTa3aHbN6-BciFPaOFMoKn2/w640-h152/Watcher.png" alt="Watcher" />
+            </a>
+            <div class="article-info">
+              <div>
+                <div class="article-header-meta">
+                  <span class="cat-badge tech-tips" style="margin-bottom:0;">Tech Tips</span>
+                  <span class="meta-row">Sept 20, 2023</span>
+                </div>
+                <h3 class="article-title">
+                  <a href="post.html">Free Program — Find if Your Computer is Being Used by Someone (Watcher)</a>
+                </h3>
+                <p class="article-excerpt">
+                  Watcher monitors unattended systems: if the mouse cursor moves, it automatically captures a webcam photo and screenshot, instantly forwarding alerts to your Telegram bot.
+                </p>
+              </div>
+              <div class="article-footer">
+                <div class="author-chip">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg33fLV-eMF__aAJ8TfolBbXg8p5lUk8cVnZ2fcl-wGIMurRrvKpJqrbbSFqGCFOSKOYSy17Nit5uk8Znu1X0bbzQmR91PJJYDWyQteHGZEF3c_1g9PJ5aq7QKFjf4qJBo/s114/TSP.jpg" alt="TSP" />
+                  <span>The Secure Planet</span>
+                </div>
+                <a href="post.html" class="read-more-link">
+                  Read Article <i class="fa fa-long-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="article-card" data-category="Digital Forensics">
+            <a href="post.html" class="article-thumb">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEevf8c51ZKIDwKTZtNFtoMJqLwudvCMD-wGtk6ifqgYoNNPpAFJcbnMf52rzspNJluYWjf1Tr6fY3WIdsQVcykGWAT5CqY667rOyQoPehn0Dmd-_hNotYqLDaNYvTOHXPlUjw73ohWp9pH6te9wpy2hbBswThf95S1bl_2sgsGTy9Sp7LiOoYIct_P8Sy/w640-h377/Image%20Forensic.png" alt="Sherloq" />
+            </a>
+            <div class="article-info">
+              <div>
+                <div class="article-header-meta">
+                  <span class="cat-badge forensics" style="margin-bottom:0;">Digital Forensics</span>
+                  <span class="meta-row">Sept 20, 2023</span>
+                </div>
+                <h3 class="article-title">
+                  <a href="post.html">Open Source — Best Image Forensic Toolset (Sherloq Framework)</a>
+                </h3>
+                <p class="article-excerpt">
+                  Sherloq is an open-source digital image forensic toolset featuring EXIF inspection, Error Level Analysis (ELA), luminance gradients, PRNU sensor noise identification, and copy-move forgery detection.
+                </p>
+              </div>
+              <div class="article-footer">
+                <div class="author-chip">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg33fLV-eMF__aAJ8TfolBbXg8p5lUk8cVnZ2fcl-wGIMurRrvKpJqrbbSFqGCFOSKOYSy17Nit5uk8Znu1X0bbzQmR91PJJYDWyQteHGZEF3c_1g9PJ5aq7QKFjf4qJBo/s114/TSP.jpg" alt="TSP" />
+                  <span>The Secure Planet</span>
+                </div>
+                <a href="post.html" class="read-more-link">
+                  Read Article <i class="fa fa-long-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="article-card" data-category="Information Security">
+            <a href="post.html" class="article-thumb">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhG7IvmikM15gkakaoJM_CNtXT5wbej0_lD3hg8WnPhmRuVBq_j49ohmuUfqDRuKI0DgcPud0qXnnzjfsWoz5CGKXMBdo6Hga6LiX8SwBJhGcEz7rXPCtbbEh4GOdEjBIWgdIIgsJbGrYKfcZSipaMksUprkcYwGO9f5b72Gb2HcP4oOmsf6BB8QbQtsEhp/w640-h198/IP4AWS.png" alt="AWS VPC" />
+            </a>
+            <div class="article-info">
+              <div>
+                <div class="article-header-meta">
+                  <span class="cat-badge infosec" style="margin-bottom:0;">Information Security</span>
+                  <span class="meta-row">Sept 20, 2023</span>
+                </div>
+                <h3 class="article-title">
+                  <a href="post.html">Monitor IPv4 Utilization for Amazon VPC Subnets using CloudWatch</a>
+                </h3>
+                <p class="article-excerpt">
+                  Deploy an AWS Lambda solution to continuously track usable vs. allocated IPv4 addresses across VPC subnets and publish custom CloudWatch IPUsage metrics for automated capacity alerts.
+                </p>
+              </div>
+              <div class="article-footer">
+                <div class="author-chip">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg33fLV-eMF__aAJ8TfolBbXg8p5lUk8cVnZ2fcl-wGIMurRrvKpJqrbbSFqGCFOSKOYSy17Nit5uk8Znu1X0bbzQmR91PJJYDWyQteHGZEF3c_1g9PJ5aq7QKFjf4qJBo/s114/TSP.jpg" alt="TSP" />
+                  <span>The Secure Planet</span>
+                </div>
+                <a href="post.html" class="read-more-link">
+                  Read Article <i class="fa fa-long-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- RIGHT MINIMALISTIC SIDEBAR -->
+      <aside class="sidebar">
+
+        <!-- Social Connect Grid -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">
+            <span><i class="fa fa-share-alt"></i> Connect With Us</span>
+          </h3>
+          <div class="social-grid">
+            <a href="https://www.twitter.com/TheSecurePlanet" target="_blank" class="social-tile">
+              <i class="fa fa-twitter"></i> Twitter
+            </a>
+            <a href="https://goo.gl/t3DX3D" target="_blank" class="social-tile">
+              <i class="fa fa-youtube-play"></i> YouTube
+            </a>
+            <a href="https://www.linkedin.com/in/prakashp" target="_blank" class="social-tile">
+              <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://feeds.feedburner.com/TheSecurePlanet" target="_blank" class="social-tile">
+              <i class="fa fa-rss"></i> RSS Feed
+            </a>
+          </div>
+        </div>
+
+        <!-- Popular Posts Feed (Exact live articles from old site) -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">
+            <span><i class="fa fa-fire"></i> Popular Articles</span>
+          </h3>
+          <div class="popular-list">
+            
+            <a href="post.html" class="popular-item">
+              <span class="popular-item-number">01</span>
+              <div class="popular-thumb">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd_-SZNNTTXFsgSVmvz5clcFtY-8-gNtikAFKOpaSca97fxxOOqsnApMOHG6luzjCnDO2hyphenhyphen8hR95qj9COiMA0YmUZs2-_qkCrTRdVSWXG_rD1E4ceQKswzkyRDOzTJX-rG1ply5rtrsus4/s72-c/VulnScan.png" alt="Microsoft Memory Corruption" />
+              </div>
+              <span class="popular-title">Microsoft — Analyze Memory Corruption Bugs</span>
+            </a>
+
+            <a href="post.html" class="popular-item">
+              <span class="popular-item-number">02</span>
+              <div class="popular-thumb">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCh5rJQAflR9_zGGyGILw7k1z1rAZIA5024G6kxgRff8m8PrVmnzwPSVNDvZnmfG9JQxVNQhTUChSQv1olVz577P2wBv3y1FNHQe_uD0xOypjrKKoYy9UwchQQmJ2VW_IhQnvw0jzFSsm9/s72-c/Taipan.jpg" alt="Taipan Scanner" />
+              </div>
+              <span class="popular-title">Free Web Application Security Scanner</span>
+            </a>
+
+            <a href="post.html" class="popular-item">
+              <span class="popular-item-number">03</span>
+              <div class="popular-thumb">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2axbFGRbCoIOSMOTkJXiQRC_EupUSHMUU9tiB2B2hsAEOs4PTr9kWvA2oLqaboZAhBm_fYE8GahL_42qykROWiWiLqPURFMRS9wJ8JSL3xdjrWXYZk4AKtCIplhifBbIJlMoSqkJv5qRe/s72-c/FreeCourses.jpg" alt="100+ Free Courses" />
+              </div>
+              <span class="popular-title">Exclusive — 100+ FREE Online Security Courses</span>
+            </a>
+
+            <a href="post.html" class="popular-item">
+              <span class="popular-item-number">04</span>
+              <div class="popular-thumb">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijXo_rItrvSbPoBTQc4RLW2qr5nxxJX6ua2OEXrWLASj0hQfPgaSQpN0hz28g2WXjxG6sRjYAbBx1RoLVH2XvWq8HskdFoFxAh8QOlKUzzqi-WyN0s2HtDT5fUUb5g03lk3mIWFbcpxzTa/s72-c/ISO.jpg" alt="ISO Standards" />
+              </div>
+              <span class="popular-title">FREE ISO International Standardization Standards</span>
+            </a>
+
+            <a href="post.html" class="popular-item">
+              <span class="popular-item-number">05</span>
+              <div class="popular-thumb">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6wHLFCOMgF9vMUp57WnN_13byeZuh5tA9P7eamIDgpyvUFnGzlP5cD5zoKkvHRzNYUC3WqLXUxoWQ4_GVJyAheZesVPQ3el4UAr9PRNkuF1Iiu8uwaOvRsTIMDwFAur_M2DY_3VaU3CyI/s72-c/AWS.png" alt="AWS IoT" />
+              </div>
+              <span class="popular-title">Free Online Courses — Amazon AWS & IoT Security</span>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Categories Cloud -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">
+            <span><i class="fa fa-tags"></i> Categories</span>
+          </h3>
+          <div class="categories-cloud">
+            <a href="index.html" class="category-tag">Information Security</a>
+            <a href="index.html" class="category-tag">Audit Compliance</a>
+            <a href="index.html" class="category-tag">Cyber Security</a>
+            <a href="index.html" class="category-tag">Digital Forensics</a>
+            <a href="index.html" class="category-tag">Tech Tips</a>
+            <a href="index.html" class="category-tag">Entrepreneurship</a>
+            <a href="index.html" class="category-tag">Science</a>
+            <a href="index.html" class="category-tag">General</a>
+            <a href="index.html" class="category-tag">Jobs</a>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="margin-bottom:12px;">
+            <span class="logo-shield" style="width:40px;height:40px;font-size:1.2rem;"><i class="fa fa-shield"></i></span>
+            <span class="brand-text" style="font-size:1.35rem;font-weight:700;">The Secure Planet</span>
+          </a>
+          <p>
+            The Secure Planet delivers premier consulting, corporate training, CISSP, CISA, and CISM research, digital forensics guides, and actionable cybersecurity intelligence.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home Feed</a>
+            <a href="about.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="dmca.html">DMCA Compliance</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Topics -->
+        <div class="footer-col">
+          <h4>Security Areas</h4>
+          <div class="footer-links">
+            <a href="index.html">Information Security</a>
+            <a href="index.html">Audit Compliance</a>
+            <a href="index.html">Digital Forensics</a>
+            <a href="index.html">Cyber Security</a>
+            <a href="index.html">Tech Tips & Guides</a>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+          <h4>Stay Secure</h4>
+          <p style="font-size:0.875rem;color:var(--text-secondary);">
+            Subscribe to receive critical alerts and research directly to your inbox.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+            <input type="email" placeholder="Your work email..." class="newsletter-input" required />
+            <button type="submit" class="btn-primary" style="padding:10px 18px;font-size:0.85rem;justify-content:center;">
+              Subscribe Now
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="footer-bottom">
+        <div>Copyright © 2026 The Secure Planet. All Rights Reserved.</div>
+        <div style="display:flex;gap:18px;">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="dmca.html">DMCA</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SEARCH MODAL OVERLAY -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal-content">
+      <div class="search-input-wrapper">
+        <i class="fa fa-search"></i>
+        <input type="text" id="search-input" class="search-modal-input" placeholder="Search articles, guides, CVEs..." />
+        <button class="search-close-btn" id="search-close" aria-label="Close search">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+      <div id="search-results-list" style="margin-top:16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="color:var(--text-muted);font-size:0.875rem;padding:8px 0;">
+          Type anything to search live articles...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

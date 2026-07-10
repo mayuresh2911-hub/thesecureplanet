@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — The Secure Planet</title>
+  <link rel="icon" href="https://www.thesecureplanet.com/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-branding">
+      <div class="brand-logo">
+        <a href="index.html" class="logo-shield"><i class="fa fa-shield"></i></a>
+        <div class="brand-text">
+          <h1><a href="index.html">The Secure <span>Planet</span></a></h1>
+          <p class="brand-tagline">Cyber Security • Audit Compliance • Digital Forensics</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-home"></i> Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+        <li class="nav-item"><a href="dmca.html" class="nav-link">DMCA</a></li>
+        <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content-area">
+    <div class="container layout-grid">
+      <article class="post-content">
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span style="color:var(--text-main);">Contact</span>
+        </nav>
+
+        <header class="post-header-main">
+          <h1 class="post-main-title">Contact Our Security Team</h1>
+        </header>
+
+        <div class="post-body">
+          <p>
+            Whether you have a tip regarding a newly discovered vulnerability, want to inquire about corporate training programs, or need audit compliance consulting, our team is ready to assist.
+          </p>
+
+          <div style="background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:32px;margin:32px 0;">
+            <form onsubmit="event.preventDefault(); alert('Message dispatched securely to The Secure Planet team!');" style="display:flex;flex-direction:column;gap:18px;">
+              <div>
+                <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:6px;">Your Legal / Professional Name</label>
+                <input type="text" placeholder="John Doe" required style="width:100%;background:var(--bg-root);border:1px solid var(--border-subtle);padding:12px 16px;border-radius:var(--radius-sm);color:var(--text-main);" />
+              </div>
+              <div>
+                <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:6px;">Official Email Address</label>
+                <input type="email" placeholder="john@company.com" required style="width:100%;background:var(--bg-root);border:1px solid var(--border-subtle);padding:12px 16px;border-radius:var(--radius-sm);color:var(--text-main);" />
+              </div>
+              <div>
+                <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:6px;">Subject / Area of Interest</label>
+                <input type="text" placeholder="Audit Compliance / Training / Tip" required style="width:100%;background:var(--bg-root);border:1px solid var(--border-subtle);padding:12px 16px;border-radius:var(--radius-sm);color:var(--text-main);" />
+              </div>
+              <div>
+                <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:6px;">Message Body</label>
+                <textarea rows="5" placeholder="Detail your inquiry securely..." required style="width:100%;background:var(--bg-root);border:1px solid var(--border-subtle);padding:12px 16px;border-radius:var(--radius-sm);color:var(--text-main);"></textarea>
+              </div>
+              <button type="submit" class="btn-primary" style="align-self:flex-start;">
+                <i class="fa fa-paper-plane"></i> Send Secure Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </article>
+
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h3 class="widget-title"><span><i class="fa fa-shield"></i> Encrypted Communication</span></h3>
+          <p style="font-size:0.875rem;color:var(--text-secondary);">
+            All inquiries sent through this form are processed via TLS/SSL encrypted channels.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>Copyright © 2026 The Secure Planet. All Rights Reserved.</div>
+        <div style="display:flex;gap:18px;">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="dmca.html">DMCA</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
